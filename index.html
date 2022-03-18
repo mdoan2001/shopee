@@ -106,8 +106,14 @@
                     </ul>
                 </nav>
 
+
+
                 <!-- Header with search -->
                 <div class="header-with-search">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fa-solid fa-magnifying-glass"></i>
+                    </label>
+
                     <div class="header__logo hide-on-tablet">
                         <a href="/" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="header__logo-img"><g fill="#fff" fill-rule="evenodd"><path 
@@ -115,7 +121,9 @@
                         </a>
                     </div>
 
-                    <div class="header__search">
+                    <input type="checkbox" id="mobile-search-checkbox" hidden class="header__search-checkbox">
+
+                    <div class="header__search ">
                         <div class="header__search-input-wrap">
                             <input type="text" placeholder="Tìm trong shop này" class="header__search-input">
 
@@ -369,13 +377,26 @@
 
                 </div>
             </div>
-
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item header__sort-item--active">
+                    <a href="" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
         </header>
 
         <div class="app__container">
             <div class="grid wide">
-                <div class="grid__row app__content">
-                    <div class="grid__column-2">
+                <div class="row sm-gutter app__content">
+                    <div class="col l-2 m-0 c-0">
                         <nav class="category">
                             <h3 class="category__heading">Danh mục</h3>
 
@@ -400,7 +421,7 @@
                         </nav>
                     </div>
 
-                    <div class="grid__column-10">
+                    <div class="col l-10 m-12 c-12">
                         <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter__label">Sắp xếp theo</span>
                             <button class="home-filter__btn btn">Phổ biến</button>
@@ -438,10 +459,53 @@
                             </div>
                         </div>
 
+
+
                         <!-- Sản phẩm -->
                         <div class="home-product">
-                            <div class="grid__row">
-                                <div class="grid__column-2-4">
+                            <nav class="mobile-category">
+                                <ul class="mobile-category__list">
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Dụng cụ & thiết bị tiện ích</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <div class="row sm-gutter">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(./assets/img/MacBookPro-14-SpaceGray.jpg);"></div>
                                         <h4 class="home-product-item__name"> Apple MacBook Pro (2020) M1 Chip, 13.3 inch, 8GB, 512GB SSD</h4>
@@ -481,7 +545,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(./assets/img/MacBookPro-14-SpaceGray.jpg);"></div>
                                         <h4 class="home-product-item__name"> Apple MacBook Pro (2020) M1 Chip, 13.3 inch, 8GB, 512GB SSD</h4>
@@ -521,7 +585,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(./assets/img/MacBookPro-14-SpaceGray.jpg);"></div>
                                         <h4 class="home-product-item__name"> Apple MacBook Pro (2020) M1 Chip, 13.3 inch, 8GB, 512GB SSD</h4>
@@ -561,7 +625,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(./assets/img/MacBookPro-14-SpaceGray.jpg);"></div>
                                         <h4 class="home-product-item__name"> Apple MacBook Pro (2020) M1 Chip, 13.3 inch, 8GB, 512GB SSD</h4>
@@ -601,7 +665,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(./assets/img/MacBookPro-14-SpaceGray.jpg);"></div>
                                         <h4 class="home-product-item__name"> Apple MacBook Pro (2020) M1 Chip, 13.3 inch, 8GB, 512GB SSD</h4>
@@ -641,7 +705,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(./assets/img/MacBookPro-14-SpaceGray.jpg);"></div>
                                         <h4 class="home-product-item__name"> Apple MacBook Pro (2020) M1 Chip, 13.3 inch, 8GB, 512GB SSD</h4>
@@ -681,7 +745,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(./assets/img/MacBookPro-14-SpaceGray.jpg);"></div>
                                         <h4 class="home-product-item__name"> Apple MacBook Pro (2020) M1 Chip, 13.3 inch, 8GB, 512GB SSD</h4>
@@ -721,7 +785,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(./assets/img/MacBookPro-14-SpaceGray.jpg);"></div>
                                         <h4 class="home-product-item__name"> Apple MacBook Pro (2020) M1 Chip, 13.3 inch, 8GB, 512GB SSD</h4>
@@ -761,7 +825,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(./assets/img/MacBookPro-14-SpaceGray.jpg);"></div>
                                         <h4 class="home-product-item__name"> Apple MacBook Pro (2020) M1 Chip, 13.3 inch, 8GB, 512GB SSD</h4>
@@ -801,7 +865,7 @@
                                     </a>
                                 </div>
 
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6 ">
                                     <a href="" class="home-product-item">
                                         <div class="home-product-item__img" style="background-image: url(./assets/img/MacBookPro-14-SpaceGray.jpg);"></div>
                                         <h4 class="home-product-item__name"> Apple MacBook Pro (2020) M1 Chip, 13.3 inch, 8GB, 512GB SSD</h4>
@@ -888,9 +952,9 @@
         </div>
 
         <footer class="footer">
-            <div class="grid wide">
-                <div class="grid__row">
-                    <div class="grid__column-2-4">
+            <div class="grid wide footer__content">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6 ">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -904,7 +968,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6 ">
                         <h3 class="footer__heading">Giới thiệu</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -917,7 +981,7 @@
                                 <a href="" class="footer-item__link">Điều khoản</a> </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6 ">
                         <h3 class="footer__heading">Theo dõi chúng tôi trên</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -937,7 +1001,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6 ">
                         <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -950,7 +1014,7 @@
                                 <a href="" class="footer-item__link">Điều khoản</a> </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12 ">
                         <h3 class="footer__heading">Vào cửa hàng ứng dụng</h3>
                         <div class="footer__download">
                             <img src="assets/img/qr-code.png" alt="" class="footer__download-qr">
